@@ -1,0 +1,308 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\repo\\api_core\\src\\core\\Application\\Application.csproj": {}
+  },
+  "projects": {
+    "E:\\repo\\api_core\\src\\core\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\repo\\api_core\\src\\core\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "E:\\repo\\api_core\\src\\core\\Application\\Application.csproj",
+        "packagesPath": "D:\\Users\\denis.velasquez\\.nuget\\packages\\",
+        "outputPath": "E:\\repo\\api_core\\src\\core\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "D:\\Users\\denis.velasquez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\repo\\api_core\\src\\core\\Domain\\Domain.csproj": {
+                "projectPath": "E:\\repo\\api_core\\src\\core\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, 15.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )",
+              "versionCentrallyManaged": true
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.27.8, )",
+              "versionCentrallyManaged": true
+            },
+            "FluentEmail.core": {
+              "target": "Package",
+              "version": "[3.0.2, )",
+              "versionCentrallyManaged": true
+            },
+            "FluentEmail.smtp": {
+              "target": "Package",
+              "version": "[3.0.2, )",
+              "versionCentrallyManaged": true
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )",
+              "versionCentrallyManaged": true
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.14.1, )",
+              "versionCentrallyManaged": true
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.22, 9.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, 9.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.22, 9.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.22, 9.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.22, 9.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, 9.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, 9.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.11, 9.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.29.3, )",
+              "versionCentrallyManaged": true
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[50.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.15.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "AutoMapper": "[12.0.1, 15.0.0)",
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": "[12.0.1, )",
+            "CloudinaryDotNet": "[1.27.8, )",
+            "FluentEmail.core": "[3.0.2, )",
+            "FluentEmail.smtp": "[3.0.2, )",
+            "FluentValidation": "[12.1.0, )",
+            "FluentValidation.AspNetCore": "[11.3.1, )",
+            "FluentValidation.DependencyInjectionExtensions": "[12.1.0, )",
+            "MailKit": "[4.14.1, )",
+            "MediatR.Extensions.Microsoft.DependencyInjection": "[11.1.0, )",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "[8.0.22, 9.0.0)",
+            "Microsoft.AspNetCore.Identity": "[2.3.1, )",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "[8.0.22, 9.0.0)",
+            "Microsoft.AspNetCore.OpenApi": "[8.0.22, 9.0.0)",
+            "Microsoft.EntityFrameworkCore": "[8.0.22, 9.0.0)",
+            "Microsoft.EntityFrameworkCore.Design": "[8.0.22, 9.0.0)",
+            "Microsoft.EntityFrameworkCore.SqlServer": "[8.0.22, 9.0.0)",
+            "Microsoft.EntityFrameworkCore.Tools": "[8.0.22, 9.0.0)",
+            "Microsoft.Extensions.Logging.Abstractions": "[8.0.2, 9.0.0)",
+            "Microsoft.Extensions.Options.ConfigurationExtensions": "[8.0.0, 9.0.0)",
+            "Newtonsoft.Json": "[13.0.3, )",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "[8.0.11, 9.0.0)",
+            "SendGrid": "[9.29.3, )",
+            "Stripe.net": "[50.0.0, )",
+            "Swashbuckle.AspNetCore": "[6.6.2, )",
+            "System.IdentityModel.Tokens.Jwt": "[8.15.0, )"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\repo\\api_core\\src\\core\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\repo\\api_core\\src\\core\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "E:\\repo\\api_core\\src\\core\\Domain\\Domain.csproj",
+        "packagesPath": "D:\\Users\\denis.velasquez\\.nuget\\packages\\",
+        "outputPath": "E:\\repo\\api_core\\src\\core\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "D:\\Users\\denis.velasquez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, 9.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "AutoMapper": "[12.0.1, 15.0.0)",
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": "[12.0.1, )",
+            "CloudinaryDotNet": "[1.27.8, )",
+            "FluentEmail.core": "[3.0.2, )",
+            "FluentEmail.smtp": "[3.0.2, )",
+            "FluentValidation": "[12.1.0, )",
+            "FluentValidation.AspNetCore": "[11.3.1, )",
+            "FluentValidation.DependencyInjectionExtensions": "[12.1.0, )",
+            "MailKit": "[4.14.1, )",
+            "MediatR.Extensions.Microsoft.DependencyInjection": "[11.1.0, )",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "[8.0.22, 9.0.0)",
+            "Microsoft.AspNetCore.Identity": "[2.3.1, )",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "[8.0.22, 9.0.0)",
+            "Microsoft.AspNetCore.OpenApi": "[8.0.22, 9.0.0)",
+            "Microsoft.EntityFrameworkCore": "[8.0.22, 9.0.0)",
+            "Microsoft.EntityFrameworkCore.Design": "[8.0.22, 9.0.0)",
+            "Microsoft.EntityFrameworkCore.SqlServer": "[8.0.22, 9.0.0)",
+            "Microsoft.EntityFrameworkCore.Tools": "[8.0.22, 9.0.0)",
+            "Microsoft.Extensions.Logging.Abstractions": "[8.0.2, 9.0.0)",
+            "Microsoft.Extensions.Options.ConfigurationExtensions": "[8.0.0, 9.0.0)",
+            "Newtonsoft.Json": "[13.0.3, )",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "[8.0.11, 9.0.0)",
+            "SendGrid": "[9.29.3, )",
+            "Stripe.net": "[50.0.0, )",
+            "Swashbuckle.AspNetCore": "[6.6.2, )",
+            "System.IdentityModel.Tokens.Jwt": "[8.15.0, )"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+E:\repo\api_core\src\core\Application\bin\Debug\net8.0\Application.deps.json
+E:\repo\api_core\src\core\Application\bin\Debug\net8.0\Application.runtimeconfig.json
+E:\repo\api_core\src\core\Application\bin\Debug\net8.0\Application.dll
+E:\repo\api_core\src\core\Application\bin\Debug\net8.0\Application.pdb
+E:\repo\api_core\src\core\Application\bin\Debug\net8.0\Domain.dll
+E:\repo\api_core\src\core\Application\bin\Debug\net8.0\Domain.pdb
+E:\repo\api_core\src\core\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+E:\repo\api_core\src\core\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\repo\api_core\src\core\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+E:\repo\api_core\src\core\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+E:\repo\api_core\src\core\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+E:\repo\api_core\src\core\Application\obj\Debug\net8.0\Application.csproj.CopyComplete
+E:\repo\api_core\src\core\Application\obj\Debug\net8.0\Application.dll
+E:\repo\api_core\src\core\Application\obj\Debug\net8.0\refint\Application.dll
+E:\repo\api_core\src\core\Application\obj\Debug\net8.0\Application.pdb
+E:\repo\api_core\src\core\Application\obj\Debug\net8.0\Application.genruntimeconfig.cache
+E:\repo\api_core\src\core\Application\obj\Debug\net8.0\ref\Application.dll

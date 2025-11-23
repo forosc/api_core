@@ -1,0 +1,44 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="[8.0.22, 9.0.0)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="[8.0.22, 9.0.0)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Identity" Version="2.3.1" />
+    <PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="[8.0.22, 9.0.0)" />
+    
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="[8.0.2 , 9.0.0)" />
+    <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="[8.0.0, 9.0.0)" />
+    
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="[8.0.22, 9.0.0)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="[8.0.22, 9.0.0)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="[8.0.22, 9.0.0)" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="[8.0.22, 9.0.0)">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageVersion>
+    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="[8.0.11, 9.0.0)" />
+    
+    <PackageVersion Include="AutoMapper" Version="[12.0.1, 15.0.0)" /> 
+    <PackageVersion Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageVersion Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    
+    <PackageVersion Include="FluentValidation" Version="12.1.0" />
+    <PackageVersion Include="FluentValidation.AspNetCore" Version="11.3.1" />
+    <PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.0" />
+    
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="8.15.0" />
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageVersion Include="Stripe.net" Version="50.0.0" />
+
+    <PackageVersion Include="CloudinaryDotNet" Version="1.27.8" />
+    <PackageVersion Include="FluentEmail.core" Version="3.0.2" />
+    <PackageVersion Include="FluentEmail.smtp" Version="3.0.2" />
+    <PackageVersion Include="MailKit" Version="4.14.1" />
+    <PackageVersion Include="SendGrid" Version="9.29.3" />
+
+  </ItemGroup>
+</Project>
