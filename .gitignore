@@ -1,55 +1,91 @@
-# Prerequisites
-*.d
+# ---------------------------------------------------------------------------------------------------------
+# IGNORE GLOBAL: Directorios de Compilación, Paquetes y Caché
+# ---------------------------------------------------------------------------------------------------------
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
+# Directorios de compilación y salida binaria
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.log
 *.pdb
+*.suo
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Paquetes NuGet y archivos de caché de VS
+.vs/                   # Directorio de usuario de Visual Studio (estado de ventanas, caché de depuración, etc.)
+packages/              # Directorio obsoleto de NuGet (usado por proyectos más antiguos)
+.nuget/                # Directorios de caché de NuGet
+/Tests/TestResults/    # Resultados de pruebas
 
-# debug information files
-*.dwo
+# Archivos de caché de .NET
+.editorconfig.defaults
+.editorconfig.user
+.DS_Store              # Archivos de metadatos de macOS
+Thumbs.db              # Archivos de caché de Windows
+
+# ---------------------------------------------------------------------------------------------------------
+# IGNORE VISUAL STUDIO / IDE
+# ---------------------------------------------------------------------------------------------------------
+
+# Archivos de usuario específicos de la solución/proyecto
+*.user
+*.bak
+*.ncb
+*.aps
+*.plg
+*.opensdf
+*.sdf
+*.vssscc
+
+# Directorios de IntelliSense y ayuda
+!*.intellisense.js     # No ignorar archivos JS generados que pueden ser útiles
+
+# ---------------------------------------------------------------------------------------------------------
+# IGNORE WEB (ASP.NET Core / Front-end)
+# ---------------------------------------------------------------------------------------------------------
+
+# Directorios de bibliotecas de Front-end/Node
+node_modules/
+npm-debug.log
+bower_components/
+dist/
+
+# Archivos de configuración de lanzamiento (Publish)
+publish/
+[Pp]ublish/
+wwwroot/temp/
+
+# Archivos de Docker y Compose
+docker-compose.vs.json
+docker-compose.override.yml
+
+# ---------------------------------------------------------------------------------------------------------
+# IGNORE TEST (xUnit, NUnit, MSTest)
+# ---------------------------------------------------------------------------------------------------------
+
+# Cobertura de código
+**/TestResults/
+.coverage
+*.trx
+
+# ---------------------------------------------------------------------------------------------------------
+# IGNORE SEGURIDAD Y CONFIGURACIÓN LOCAL
+# ---------------------------------------------------------------------------------------------------------
+
+# Archivos de configuración de entorno (settings) con credenciales
+# Es VITAL no subir estos archivos a menos que contengan solo settings genéricas.
+appsettings*.Development.json # Ignora las versiones de desarrollo (pueden contener secretos locales)
+appsettings*.Staging.json
+appsettings*.Production.json
+appsettings*.json.user
+
+# Certificados de desarrollo de HTTPS
+*.pfx
+*.key
+*.cer
+
+# Archivos de base de datos local
+*.mdf
+*.ldf
+*.sqlite
+*.db
