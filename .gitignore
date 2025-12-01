@@ -10,6 +10,7 @@
 *.log
 *.pdb
 *.suo
+*.vsidx
 
 # Paquetes NuGet y archivos de caché de VS
 .vs/                   # Directorio de usuario de Visual Studio (estado de ventanas, caché de depuración, etc.)
