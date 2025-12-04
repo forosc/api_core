@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "hH73ga3sY92uqhbqCUkDDuZZz7enfy6z1r562NcIezdNJOKEQSc6CCR/QHz0bIarRZZO7Qpebj7vOpuyos9tRQ==",
+  "dgSpecHash": "IV0BaB64UHlonmFwF3POGswTL2HL6m0E0Ng1qJ86hlqTXA3a32wnMobsU0HuHbiqAvVC4kR5mhud3WFUoMFx1Q==",
   "success": true,
   "projectFilePath": "E:\\repo\\api_core\\src\\core\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
+    "D:\\Users\\denis.velasquez\\.nuget\\packages\\documentformat.openxml\\3.3.0\\documentformat.openxml.3.3.0.nupkg.sha512",
+    "D:\\Users\\denis.velasquez\\.nuget\\packages\\documentformat.openxml.framework\\3.3.0\\documentformat.openxml.framework.3.3.0.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.3.0\\microsoft.aspnetcore.authentication.2.3.0.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.3.0\\microsoft.aspnetcore.authentication.cookies.2.3.0.nupkg.sha512",
@@ -45,6 +47,7 @@
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
+    "D:\\Users\\denis.velasquez\\.nuget\\packages\\system.io.packaging\\8.0.1\\system.io.packaging.8.0.1.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\system.security.cryptography.xml\\8.0.2\\system.security.cryptography.xml.8.0.2.nupkg.sha512",

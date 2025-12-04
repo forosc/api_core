@@ -6,6 +6,7 @@ E:\repo\api_core\src\core\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorC
 E:\repo\api_core\src\core\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
 E:\repo\api_core\src\core\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
 E:\repo\api_core\src\core\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+E:\repo\api_core\src\core\Domain\obj\Debug\net8.0\Domain.sourcelink.json
 E:\repo\api_core\src\core\Domain\obj\Debug\net8.0\Domain.dll
 E:\repo\api_core\src\core\Domain\obj\Debug\net8.0\refint\Domain.dll
 E:\repo\api_core\src\core\Domain\obj\Debug\net8.0\Domain.pdb

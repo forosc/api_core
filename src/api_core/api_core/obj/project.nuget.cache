@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ecSJVhr93LMCClcqR1vnqE8rh8hFvV6KJ5Dt5+BEiRdWvhOpkuDNl2sgK9OxTKbrJw3UEEym81yfWXV4OlJKbA==",
+  "dgSpecHash": "KNF2Em+VeFlV0V+UspnM1o10U/HIjhFGQ+Iar2JdEMQO+wK1yKV98NG55AQsDQqxHBFxzEwD+jsSeDVyXvx65g==",
   "success": true,
   "projectFilePath": "E:\\repo\\api_core\\src\\api_core\\api_core\\api_core.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\bouncycastle.cryptography\\2.6.1\\bouncycastle.cryptography.2.6.1.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\cloudinarydotnet\\1.27.8\\cloudinarydotnet.1.27.8.nupkg.sha512",
+    "D:\\Users\\denis.velasquez\\.nuget\\packages\\documentformat.openxml\\3.3.0\\documentformat.openxml.3.3.0.nupkg.sha512",
+    "D:\\Users\\denis.velasquez\\.nuget\\packages\\documentformat.openxml.framework\\3.3.0\\documentformat.openxml.framework.3.3.0.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\fluentemail.core\\3.0.2\\fluentemail.core.3.0.2.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\fluentemail.smtp\\3.0.2\\fluentemail.smtp.3.0.2.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\fluentvalidation\\12.1.0\\fluentvalidation.12.1.0.nupkg.sha512",
@@ -131,6 +133,7 @@
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "D:\\Users\\denis.velasquez\\.nuget\\packages\\system.io.packaging\\8.0.1\\system.io.packaging.8.0.1.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "D:\\Users\\denis.velasquez\\.nuget\\packages\\system.net.http\\4.3.4\\system.net.http.4.3.4.nupkg.sha512",

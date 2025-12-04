@@ -70,6 +70,7 @@
             "AutoMapper": "[12.0.1, 15.0.0)",
             "AutoMapper.Extensions.Microsoft.DependencyInjection": "[12.0.1, )",
             "CloudinaryDotNet": "[1.27.8, )",
+            "DocumentFormat.OpenXml": "[3.3.0, )",
             "FluentEmail.core": "[3.0.2, )",
             "FluentEmail.smtp": "[3.0.2, )",
             "FluentValidation": "[12.1.0, )",
@@ -171,6 +172,11 @@
             "CloudinaryDotNet": {
               "target": "Package",
               "version": "[1.27.8, )",
+              "versionCentrallyManaged": true
+            },
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[3.3.0, )",
               "versionCentrallyManaged": true
             },
             "FluentEmail.core": {
@@ -277,6 +283,7 @@
             "AutoMapper": "[12.0.1, 15.0.0)",
             "AutoMapper.Extensions.Microsoft.DependencyInjection": "[12.0.1, )",
             "CloudinaryDotNet": "[1.27.8, )",
+            "DocumentFormat.OpenXml": "[3.3.0, )",
             "FluentEmail.core": "[3.0.2, )",
             "FluentEmail.smtp": "[3.0.2, )",
             "FluentValidation": "[12.1.0, )",
@@ -358,6 +365,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[3.3.0, )",
+              "versionCentrallyManaged": true
+            },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
               "version": "[2.3.1, )",
@@ -373,6 +385,7 @@
             "AutoMapper": "[12.0.1, 15.0.0)",
             "AutoMapper.Extensions.Microsoft.DependencyInjection": "[12.0.1, )",
             "CloudinaryDotNet": "[1.27.8, )",
+            "DocumentFormat.OpenXml": "[3.3.0, )",
             "FluentEmail.core": "[3.0.2, )",
             "FluentEmail.smtp": "[3.0.2, )",
             "FluentValidation": "[12.1.0, )",
@@ -458,6 +471,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[3.3.0, )",
+              "versionCentrallyManaged": true
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.22, 9.0.0)",
@@ -500,6 +518,7 @@
             "AutoMapper": "[12.0.1, 15.0.0)",
             "AutoMapper.Extensions.Microsoft.DependencyInjection": "[12.0.1, )",
             "CloudinaryDotNet": "[1.27.8, )",
+            "DocumentFormat.OpenXml": "[3.3.0, )",
             "FluentEmail.core": "[3.0.2, )",
             "FluentEmail.smtp": "[3.0.2, )",
             "FluentValidation": "[12.1.0, )",

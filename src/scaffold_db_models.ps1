@@ -10,7 +10,7 @@ $DB_CONNECTION = "Host=localhost;Port=5432;Database=postgres;Username=postgres;P
 # PROVEEDOR DE BASE DE DATOS
 $DB_PROVIDER = "Npgsql.EntityFrameworkCore.PostgreSQL"
 # PROYECTO DE INICIO (Configuración, inyección de dependencias)
-$STARTUP_PROJECT= "src/api_core"
+$STARTUP_PROJECT= "src/api_core/api_core"
 # PROYECTO OBJETIVO (El proyecto que ejecuta el comando)
 $PROJECT_TARGET = "src/infrastructure"
 
@@ -20,10 +20,10 @@ $EXISTING_DB_CONTEXT_NAME = "DataDBContext"
 
 # CARPETA DE SALIDA (Ubicación de las ENTIDADES, relativa al PROJECT_TARGET)
 # Ruta relativa: subir de src/infrastructure (..) e ir a core/Domain/Model/Entities
-$OUTPUT_DIR = "../core/Domain/Model/Entities"
+$OUTPUT_DIR = "src/core/Domain/Model/Entities"
 
 # LISTA DE TABLAS A GENERAR (separadas por coma)
-$TABLES = "Clientes, Pedidos, Productos"
+$TABLES = "public.cutoff_multimedia, public.altassuspenciones_base, public.cortesap, public.cortesap_temp, indicadores.altassuspencionesconceptos, indicadores.altassuspenciones, indicadores.cdr_resumen, indicadores.sapresumen, comparativo.altas_suspenciones, comparativo.tbl_suspecone"
 # 2. Comando Principal de Scaffolding
 
 Write-Host "Iniciando Scaffold de Entity Framework Core..."
@@ -60,3 +60,6 @@ if ($LASTEXITCODE -eq 0) {
 
 Write-Host ""
 Write-Host "---------------------------------------------------------"
+
+
+##dotnet ef dbcontext scaffold "Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=Claro2024" Npgsql.EntityFrameworkCore.PostgreSQL --startup-project src/api_core/api_core --project src/infrastructure --output-dir ../core/Domain/Model/Entities --context-dir Persistence --context DataDBContext --force --data-annotations --table public.cutoff_multimedia --table public.altassuspenciones_base --table public.cortesap --table public.cortesap_temp --table indicadores.altassuspencionesconceptos --table indicadores.altassuspenciones --table indicadores.cdr_resumen --table indicadores.sapresumen --table comparativo.altas_suspenciones --table comparativo.tbl_suspecone
