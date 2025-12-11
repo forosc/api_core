@@ -45,6 +45,8 @@ namespace Application.Persistence
         /// </summary>
         Task<T?> GetEntityWithSpecAsync(ISpecification<T> spec);
 
+        Task AddRangeAsync(IEnumerable<T> entities, CancellationToken cancellationToken = default);
+
         /// <summary>
         /// Recupera una lista de entidades aplicando todos los criterios de la Specification.
         /// </summary>

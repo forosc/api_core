@@ -73,6 +73,17 @@ namespace Infrastructure.Repositiries
             return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
         }
 
+        /// <summary>
+        /// Agrega un rango de entidades al contexto de forma asíncrona.
+        /// </summary>
+        public async Task AddRangeAsync(IEnumerable<T> entities, CancellationToken cancellationToken = default)
+        {
+            // Usamos la API AddRangeAsync de EF Core para un mejor rendimiento asíncrono.
+            await _context.Set<T>().AddRangeAsync(entities, cancellationToken);
+        }
+
+        
+
         public async Task<IReadOnlyList<T>> GetAllWithSpecAsync(ISpecification<T> spec)
         {
             return await ApplySpecification(spec).ToListAsync();

@@ -13,6 +13,8 @@ namespace Infrastructure.Repositiries
     {
         private Hashtable? _repositories;
         private readonly DataDBContext _context;
+
+
         public UnitOfWork(DataDBContext context)
         {
             _context = context;
@@ -33,6 +35,16 @@ namespace Infrastructure.Repositiries
         public void Dispose()
         {
             _context.Dispose();
+        }
+
+        /// <summary>
+        /// Confirma todos los cambios realizados en el contexto de la base de datos.
+        /// </summary>
+        /// <returns>El número de objetos cuyo estado fue guardado.</returns>
+        public async Task<int> CompleteAsync(CancellationToken cancellationToken = default)
+        {
+            // Este es el único lugar donde se llama a SaveChangesAsync
+            return await _context.SaveChangesAsync(cancellationToken);
         }
 
         public IAsyncRepository<TEntity> Repository<TEntity>() where TEntity : class

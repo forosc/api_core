@@ -1,13 +1,8 @@
-﻿using Domain.Abstractions;
-using Domain.Model.POCO;
-using System.Globalization;
+﻿using Domain.Model.POCO;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Collections.Generic;
-using System.Linq;
-using System;
-using System.IO;
 using Infrastructure.Configuration;
+using Application.Interfaces;
 
 namespace Infrastructure.Parsers
 {
@@ -41,6 +36,112 @@ namespace Infrastructure.Parsers
                 }
             }
         }
+
+        public async Task<IEnumerable<BalanceData>> GetParsedBalanceDataAsync(
+            string filePath,
+            CancellationToken cancellationToken = default)
+        {
+            if (!File.Exists(filePath))
+                throw new FileNotFoundException($"Archivo no encontrado: {filePath}");
+
+            var balanceDataList = new List<BalanceData>();
+
+            try
+            {
+                // Leer todas las líneas del archivo
+                var lines = await File.ReadAllLinesAsync(filePath, cancellationToken);
+
+                // Saltar encabezados si es necesario (depende del formato SAP)
+                int startIndex = DetermineStartIndex(lines);
+
+                for (int i = startIndex; i < lines.Length; i++)
+                {
+                    cancellationToken.ThrowIfCancellationRequested();
+
+                    var line = lines[i];
+                    if (string.IsNullOrWhiteSpace(line))
+                        continue;
+
+                    var balanceData = ParseLine(line);
+                    if (balanceData != null)
+                    {
+                        balanceDataList.Add(balanceData);
+                    }
+                }
+
+                return balanceDataList;
+            }
+            catch (Exception ex)
+            {
+                // Loggear error según tu estrategia de logging
+                throw new InvalidOperationException(
+                    $"Error procesando archivo SAP: {ex.Message}", ex);
+            }
+        }
+
+        private int DetermineStartIndex(string[] lines)
+        {
+            // Lógica para detectar encabezados del archivo SAP
+            // Esto depende del formato específico de tu archivo
+
+            // Ejemplo: Saltar las primeras 3 líneas si son encabezados
+            if (lines.Length > 0 && lines[0].Contains("Material"))
+                return 1;
+
+            // Otra lógica común: buscar línea que contenga datos numéricos
+            for (int i = 0; i < Math.Min(lines.Length, 10); i++)
+            {
+                if (IsDataLine(lines[i]))
+                    return i;
+            }
+
+            return 0; // Empezar desde el principio si no se detectan encabezados
+        }
+
+        private bool IsDataLine(string line)
+        {
+            // Verificar si la línea contiene datos (no encabezados/comentarios)
+            return !string.IsNullOrWhiteSpace(line) &&
+                   !line.StartsWith("#") &&
+                   !line.StartsWith("//") &&
+                   !line.StartsWith("Material") &&
+                   !line.StartsWith("***");
+        }
+
+        private BalanceData ParseLine(string line)
+        {
+            try
+            {
+                // Dependiendo del formato del archivo SAP (CSV, TXT, etc.)
+                // Ejemplo para CSV separado por punto y coma (formato SAP común)
+                var columns = line.Split(';', StringSplitOptions.TrimEntries);
+
+                // Asegúrate de que tienes suficientes columnas
+                if (columns.Length < 5) // Ajusta según tu estructura
+                    return null;
+
+                return new BalanceData
+                {
+                    Material = NormalizeString(columns[0]),
+                    StockTotal = NormalizeNumber(columns[1]),
+                    UnidadMedida = NormalizeString(columns[2]),
+                    ValorTotal = NormalizeNumber(columns[3]),
+                    Moneda = NormalizeString(columns[4])
+                };
+            }
+            catch (Exception ex)
+            {
+                // Loggear error de parsing para esta línea específica
+                Console.WriteLine($"Error parsing line: {line}. Error: {ex.Message}");
+                return null;
+            }
+        }
+
+        private string NormalizeString(string input)
+        {
+            return string.IsNullOrWhiteSpace(input) ? string.Empty : input.Trim();
+        }
+
 
         public IEnumerable<string[]> GetParsedMultiLineData(string inputPath)
         {

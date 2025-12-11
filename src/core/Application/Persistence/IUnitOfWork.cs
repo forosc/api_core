@@ -9,6 +9,7 @@ namespace Application.Persistence
     public interface IUnitOfWork : IDisposable
     {
         IAsyncRepository<TEntity> Repository<TEntity>() where TEntity : class;
+        Task<int> CompleteAsync(CancellationToken cancellationToken = default);
         Task<int> Complete();
     }
 }

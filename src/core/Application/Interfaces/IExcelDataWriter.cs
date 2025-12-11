@@ -1,6 +1,6 @@
 ﻿using DocumentFormat.OpenXml;
 
-namespace Domain.Abstractions
+namespace Application.Interfaces
 {
     public interface IExcelDataWriter
     {
